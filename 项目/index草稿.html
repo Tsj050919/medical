@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化学科普站 | 公益化学科普课题组成果展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        primary:'#165DFF',
+                        secondary:'#36CFC9',
+                        dark:'#111827'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-gradient-main{background:linear-gradient(135deg,#165DFF 0%,#36CFC9 100%);}
+        .card-hover{transition:all 0.3s ease;}
+        .card-hover:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(22,93,255,0.12);}
+        html{scroll-behavior:smooth;}
+        .img-cover{object-fit:cover;}
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- 导航栏 -->
+<nav class="fixed w-full top-0 bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="font-bold text-xl text-primary flex items-center gap-2">
+            <img src="logo.jpg" alt="化学科普站LOGO" class="h-9 rounded-md">
+            化学科普站
+        </a>
+        <div class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#video" class="text-primary">科普视频</a>
+            <a href="#about" class="hover:text-primary">项目概况</a>
+            <a href="#teacher" class="hover:text-primary">指导老师</a>
+            <a href="#award" class="hover:text-primary">项目荣誉</a>
+            <a href="#team" class="hover:text-primary">课题组团队</a>
+            <a href="#cultural" class="hover:text-primary">科普文创</a>
+        </div>
+        <button class="md:hidden text-xl"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</nav>
+
+<!-- 顶部Banner -->
+<section class="bg-gradient-main min-h-[70vh] flex items-center pt-20">
+    <div class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center text-white">
+        <div>
+            <span class="bg-white/20 px-3 py-1 rounded-full text-sm">公益科普 · 化学育人</span>
+            <h1 class="text-4xl md:text-5xl font-bold mt-4 leading-tight">
+                化学科普站<br>公益化学科普项目
+            </h1>
+            <p class="mt-6 text-lg opacity-90 leading-relaxed">
+                聚焦「实验室→生活场景」科学传播<br>
+                大学生赋能乡村教育<br>
+                化学 + 美育，落地优质科普内容
+            </p>
+            <a href="#video" class="inline-block mt-8 bg-white text-primary font-semibold px-6 py-3 rounded-full shadow-md">
+                查看科普视频成果
+            </a>
+        </div>
+        <div class="hidden md:block">
+            <img src="team-show.jpg" class="rounded-2xl shadow-2xl w-full h-[420px] img-cover" alt="化学科普活动">
+        </div>
+    </div>
+</section>
+
+<!-- 科普视频 -->
+<section id="video" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">📹 科普公益成果视频</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+            <p class="text-gray-500 mt-2 text-lg">课题组支教纪实 · 核心成果展示</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="rounded-xl overflow-hidden shadow-lg card-hover bg-white">
+                <iframe class="w-full aspect-video" src="https://player.bilibili.com/player.html?bvid=BV1ZaaczwEXy" frameborder="0" allowfullscreen></iframe>
+                <div class="p-5">
+                    <h4 class="font-bold text-lg">在云南高原，我们给孩子种了个“科学+绿”的梦</h4>
+                    <p class="text-gray-500 mt-1">知识之窗科普舱Climate4Movers支教纪实</p>
+                </div>
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-lg card-hover bg-white">
+                <iframe class="w-full aspect-video" src="https://player.bilibili.com/player.html?bvid=BV11LHSeBEJ9" frameborder="0" allowfullscreen></iframe>
+                <div class="p-5">
+                    <h4 class="font-bold text-lg">“知识之窗科普舱”赴云南寻甸县支教故事</h4>
+                    <p class="text-gray-500 mt-1">乡村科普公益纪实 · 化学与自然教育</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 项目概况 -->
+<section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">项目概况</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-7 rounded-xl bg-white card-hover">
+                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">科普定位</h3>
+                <p class="text-gray-600">
+                    打通实验室与日常生活，将专业化学知识生活化、通俗化，构建可落地的科普内容体系。
+                </p>
+            </div>
+            <div class="p-7 rounded-xl bg-white card-hover">
+                <div class="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">内容形式</h3>
+                <p class="text-gray-600">
+                    趣味实验视频、线下科普课堂、科普文创开发，系统化产出优质科普资源。
+                </p>
+            </div>
+            <div class="p-7 rounded-xl bg-white card-hover">
+                <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">公益使命</h3>
+                <p class="text-gray-600">
+                    依托大学生科研资源反哺乡村基础教育，推进「化学+美育」融合科普，培养青少年科学素养。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 指导老师 -->
+<section id="teacher" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">指导老师</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+        </div>
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center bg-gray-50 p-8 rounded-2xl shadow-lg">
+            <div class="w-52 h-52 rounded-xl overflow-hidden shadow-md">
+                <img src="teacher-zhao.jpg" class="w-full h-full img-cover" alt="赵丹丹老师">
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl font-bold text-primary mb-2">赵丹丹</h3>
+                <p class="text-gray-700">华东理工大学化学与分子工程学院<br>国家级化学实验教学中心党支部组织委员</p>
+                <ul class="mt-4 space-y-2 text-gray-700">
+                    <li>✅ 三次荣获上海市“优秀指导教师”称号</li>
+                    <li>✅ 2016年开启化学科普探索，2019年带队深耕</li>
+                    <li>✅ 指导团队获省部级奖项十余项，其他奖项30余项</li>
+                    <li>✅ 创立“知识之窗科普舱”“益路奋进”师生俱乐部</li>
+                    <li>✅ “心灵之窗”大学生返乡科普支教品牌发起人</li>
+                </ul>
+            </div>
+        </div>
+</section>
+
+<!-- 项目荣誉 -->
+<section id="award" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">项目荣誉</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow card-hover text-center">
+                <i class="fa-solid fa-award text-3xl text-amber-500"></i>
+                <h4 class="font-bold mt-4">中国国际大学生创新大赛</h4>
+                <p class="text-gray-500 text-sm mt-2">2024 上海赛区银奖</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow card-hover text-center">
+                <i class="fa-solid fa-trophy text-3xl text-primary"></i>
+                <h4 class="font-bold mt-4">上海市挑战杯</h4>
+                <p class="text-gray-500 text-sm mt-2">创新创业大赛 银奖</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow card-hover text-center">
+                <i class="fa-solid fa-medal text-3xl text-secondary"></i>
+                <h4 class="font-bold mt-4">榜样100 全国优秀大学生社团</h4>
+                <p class="text-gray-500 text-sm mt-2">2025 年度荣誉</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 科普文创 -->
+<section id="cultural" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">🎁 科普文创成果</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+            <p class="text-gray-500 mt-2">化学与美育结合 · 特色文创展示</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="aspect-square rounded-xl overflow-hidden shadow card-hover">
+                <img src="cultural-1.jpg" class="w-full h-full img-cover" alt="文创1">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden shadow card-hover">
+                <img src="cultural-2.jpg" class="w-full h-full img-cover" alt="文创2">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden shadow card-hover">
+                <img src="cultural-3.jpg" class="w-full h-full img-cover" alt="文创3">
+            </div>
+            <div class="aspect-square rounded-xl overflow-hidden shadow card-hover">
+                <img src="cultural-4.jpg" class="w-full h-full img-cover" alt="文创4">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 课题组团队 -->
+<section id="team" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl font-bold">课题组团队</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="rounded-xl overflow-hidden shadow card-hover">
+                <img src="team-work.jpg" class="w-full h-[240px] img-cover" alt="团队工作">
+            </div>
+            <div class="rounded-xl overflow-hidden shadow card-hover">
+                <img src="team-report.jpg" class="w-full h-[240px] img-cover" alt="项目汇报">
+            </div>
+            <div class="rounded-xl overflow-hidden shadow card-hover">
+                <img src="team-activity.jpg" class="w-full h-[240px] img-cover" alt="支教活动">
+            </div>
+        </div>
+
+        <style>
+        .video-container {
+            display: none;
+        }
+        .video-container.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        </style>
+
+        <div class="grid md:grid-cols-4 gap-6">
+        <!-- 指导老师 -->
+        <div class="bg-white p-5 rounded-xl shadow text-center card-hover">
+            <div class="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-2xl text-primary">
+            <i class="fa-solid fa-user"></i>
+            </div>
+            <h4 class="font-bold mt-3">指导老师</h4>
+            <p class="text-sm text-gray-500">科研指导 / 项目把关</p>
+        </div>
+
+        <!-- 实验研发（点击展开视频） -->
+        <div class="bg-white p-5 rounded-xl shadow text-center card-hover cursor-pointer" onclick="toggleVideo()">
+            <div class="w-20 h-20 mx-auto rounded-full bg-secondary/10 flex items-center justify-center text-2xl text-secondary">
+            <i class="fa-solid fa-flask"></i>
+            </div>
+            <h4 class="font-bold mt-3">实验研发</h4>
+            <p class="text-sm text-gray-500">点击查看实验视频</p>
+        </div>
+
+        <!-- 技术开发 -->
+        <div class="bg-white p-5 rounded-xl shadow text-center card-hover">
+            <div class="w-20 h-20 mx-auto rounded-full bg-primary/10 flex items-center justify-center text-2xl text-primary">
+            <i class="fa-solid fa-code"></i>
+            </div>
+            <h4 class="font-bold mt-3">技术开发</h4>
+            <p class="text-sm text-gray-500">网站搭建 / 内容部署</p>
+        </div>
+
+        <!-- 视频制作 -->
+        <div class="bg-white p-5 rounded-xl shadow text-center card-hover">
+            <div class="w-20 h-20 mx-auto rounded-full bg-secondary/10 flex items-center justify-center text-2xl text-secondary">
+            <i class="fa-solid fa-video"></i>
+            </div>
+            <h4 class="font-bold mt-3">视频制作</h4>
+            <p class="text-sm text-gray-500">剪辑包装 / 成果输出</p>
+        </div>
+        </div>
+
+        <!-- 点击展开的实验视频 -->
+        <div class="video-container mt-8 px-4" id="videoBox">
+        <h3 class="text-xl font-bold text-center mb-6">实验研发视频展示</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-3 rounded-xl shadow">
+            <p class="font-semibold mb-2 text-center">1. 酸碱指示剂变色系列实验</p>
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1dVu2zaE7r&page=1" 
+                width="100%" height="280" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="bg-white p-3 rounded-xl shadow">
+            <p class="font-semibold mb-2 text-center">2. “茶色缤纷”变色系列实验</p>
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1R4gPz2EBa&page=1" 
+                width="100%" height="280" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+
+        <script>
+        function toggleVideo() {
+        const box = document.getElementById('videoBox');
+        box.classList.toggle('active');
+        }
+        </script>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+        <img src="logo.jpg" alt="化学科普站LOGO" class="h-12 mx-auto mb-4">
+        <h3 class="font-bold text-xl mb-2">化学科普站</h3>
+        <p class="text-gray-400 text-sm">
+            科普赋能教育 · 实验传递科学 · 专注化学公益传播
+        </p>
+        <div class="mt-6 text-gray-500 text-sm">
+            © 2025 All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
